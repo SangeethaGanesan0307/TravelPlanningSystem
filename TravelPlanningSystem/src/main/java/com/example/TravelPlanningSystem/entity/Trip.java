@@ -30,8 +30,6 @@ public class Trip
 	private TransportationMode transportationMode;
 	private AccommodationType accommodationType;
 	
-	@ManyToOne(cascade = CascadeType.ALL)
-	private User user;
 	
 	@OneToMany(cascade = CascadeType.ALL)
 	private List<ItineraryItem> itineraryItems;

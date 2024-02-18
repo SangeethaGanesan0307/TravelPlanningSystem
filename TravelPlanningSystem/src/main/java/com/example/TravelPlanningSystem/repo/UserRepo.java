@@ -6,4 +6,6 @@ import com.example.TravelPlanningSystem.entity.User;
 public interface UserRepo extends JpaRepository<User, Integer>
 {
 
+	User findByuserEmail(String userEmail);
+
 }

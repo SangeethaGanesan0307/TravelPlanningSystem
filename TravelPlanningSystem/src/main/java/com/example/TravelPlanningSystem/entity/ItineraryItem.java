@@ -1,5 +1,6 @@
 package com.example.TravelPlanningSystem.entity;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import org.springframework.stereotype.Component;
 
@@ -22,10 +23,9 @@ public class ItineraryItem
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int itineraryItemId;
 	private String activity;
-	private LocalDate startTime;
-	private LocalDate endTime;
+	private LocalDateTime startTime;
+	private LocalDateTime endTime;
 	
-	@ManyToOne(cascade = CascadeType.ALL)
-	private Trip trip;
+	
 }
 
